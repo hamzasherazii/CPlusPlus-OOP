@@ -1,1 +1,28 @@
-// Assign and print the roll number, phone number and address of two students having names “Sami” and “John” respectively by creating two objects of the class "Student‟ 
+#include <iostream>
+using namespace std;
+
+class Circle {
+private:
+    float radius;
+    float area;
+public:
+    void getRadius() {
+        cout << "Enter RADIUS: ";
+        cin >> radius;
+    }
+    void getArea() {
+        area = 3.14 * radius * radius; // pi = 22/7 = 3.14
+    }
+    void displayResult() {
+        cout << "The area of the circle with radius " << radius << " is " << area << endl;
+    }
+};
+
+int main() 
+{
+    Circle myCircle;
+    myCircle.getRadius();
+    myCircle.getArea();
+    myCircle.displayResult();
+    return 0;
+}
