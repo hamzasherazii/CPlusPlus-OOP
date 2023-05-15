@@ -9,15 +9,21 @@ class A{
         cout<<"a"<<endl;
     }
 };
-class B: public A{
+class B{
     public:
     B(){
         cout<<"b"<<endl;
     }
 };
+class C: public A, public B{
+    public:
+    C(){
+        cout<<"c"<<endl;
+    }
+};
 
 int main(){
-    B i;
-    // i.a();  
+    C i;
+    // i.B::B(); 
     return 0;
 }
