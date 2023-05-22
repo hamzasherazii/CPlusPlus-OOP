@@ -14,8 +14,10 @@ int main(){
     cout << "---------------------------------" << endl;
 
     int d = 2;
+    int x;
     int *P;
     P = &d;
     cout << P << endl;
     cout << *P << endl;
+    cout << sizeof(x);
 }
